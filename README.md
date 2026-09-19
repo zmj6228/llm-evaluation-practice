@@ -22,7 +22,7 @@
 5. **轨迹评测能发现过程缺失**：Agent 最终答案看起来对，但轨迹评测发现它少了一步关键操作。
 
 ## 目录结构
-
+```text
 llm-evaluation-practice/
 ├── README.md
 ├── notes/
@@ -38,7 +38,7 @@ llm-evaluation-practice/
     ├── trajectory_evaluation_report.html
     ├── trajectory_evaluation_results.json
     └── banking_bot_test_results.xlsx
-
+```
 
 ## 致谢
 
