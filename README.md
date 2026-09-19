@@ -3,14 +3,14 @@
 本项目基于开源仓库 [amitbad/llm-evaluation](https://github.com/amitbad/llm-evaluation) 进行学习实践，记录了我在完成 Phase 0-5 评测链路过程中跑出的结果、发现的问题和总结的方法论。
 
 原作者代码：https://github.com/amitbad/llm-evaluation
-我的实践记录：见 `notes/` 和 `reports/`
+我的实践记录：见 **notes/** 和 **reports/** 目录
 
 在此完整流程的基础上，我发现，在无大算力的情况下，数据的质量高低就成了一项重要的指标。不同的模型在不同功能上的分布特征有着很明显的区别，尤其是当进行LLM-as-a-Judge时，数据的筛选就显得尤为重要。故因此，我认为，当前大环境下，不仅要对大模型进行高强度训练，对于像Llama-3-8B这样的小模型，更能凸显出数据在整个测试评估流程中的重要性。
 
 ## 我做了什么
 
 - 完整跑通 Phase 0-5 评测链路：关键词检查 → BLEU/ROUGE → LLM-as-judge → 语义相似度 → Groundedness → 温度敏感度 → RAG 评测 → Agent 轨迹评测
-- - 修复了原作者脚本在 Windows 中文系统下的 GBK 编码问题，涉及 `healthcare_bot.py`、`groundedness_evaluator.py`、`rag_bot.py` 等多个脚本
+- 修复了原作者脚本在 Windows 中文系统下的 GBK 编码问题，涉及 **healthcare_bot.py**、**groundedness_evaluator.py**、**rag_bot.py** 等多个脚本
 - 记录了 5 个关键发现，见 `notes/`
 
 ## 关键发现
