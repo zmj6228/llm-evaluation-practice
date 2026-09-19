@@ -10,7 +10,7 @@
 ## 我做了什么
 
 - 完整跑通 Phase 0-5 评测链路：关键词检查 → BLEU/ROUGE → LLM-as-judge → 语义相似度 → Groundedness → 温度敏感度 → RAG 评测 → Agent 轨迹评测
-- 修复了原作者脚本在 Windows 中文系统下的 GBK 编码问题，涉及 `healthcare_bot.py`,`groundedness_evaluator.py`,`rag_bot.py` 等多个脚本
+- 修复了原作者脚本在 Windows 中文系统下的 GBK 编码问题，涉及 `healthcare_bot.py` `groundedness_evaluator.py` `rag_bot.py` 等多个脚本
 - 记录了 5 个关键发现，见 `notes/`
 
 ## 关键发现
